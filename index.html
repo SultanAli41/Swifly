@@ -4,6 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="color-scheme" content="light">
+    <meta name="supported-color-schemes" content="light">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
@@ -47,7 +49,25 @@
             padding: 16px 36px;
             margin: 10px 0px 20px 0px;
         }
+        @media (prefers-color-scheme: dark) {
+    img {
+        background-color: transparent !important;
+        color: white;
+    }
+    .content {
+        background: #ECECF0 !important;
+    }
+}
 
+/* Outlook.com dark mode (you already have this) */
+[data-ogsc] img {
+    background-color: transparent !important;
+}
+
+/* Gmail dark mode */
+u + .body img {
+    background-color: transparent !important;
+}
         @media screen and (max-width:600px) {
             .content {
                 width: 95% !important;
@@ -132,7 +152,7 @@ font-family: Arial, sans-serif !important;
                         </tr>
                         <tr>
                             <td align="center" style="padding:42px 0 28px;">
-                                <a href="{{confirm_url}}" class="mobile-btn" style="display:block; max-width:536px; width:90%;
+                                <a href="{{confirm_url}}" class="mobile-btn" style="display:block; max-width:536px; width:100%; max-height: 64px;
             box-sizing:border-box;
             padding:14px 20px;
             border:2px solid #111;
