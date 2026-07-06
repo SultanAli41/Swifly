@@ -49,25 +49,26 @@
             padding: 16px 36px;
             margin: 10px 0px 20px 0px;
         }
+
         @media (prefers-color-scheme: dark) {
-    img {
-        background-color: transparent !important;
-        color: white;
-    }
-    .content {
-        background: #ECECF0 !important;
-    }
-}
+            img {
+                background-color: transparent !important;
+                color: white;
+            }
 
-/* Outlook.com dark mode (you already have this) */
-[data-ogsc] img {
-    background-color: transparent !important;
-}
+            .content {
+                background: #ECECF0 !important;
+            }
+        }
 
-/* Gmail dark mode */
-u + .body img {
-    background-color: transparent !important;
-}
+        [data-ogsc] img {
+            background-color: transparent !important;
+        }
+
+        u+.body img {
+            background-color: transparent !important;
+        }
+
         @media screen and (max-width:600px) {
             .content {
                 width: 95% !important;
@@ -101,11 +102,9 @@ font-family: Arial, sans-serif !important;
 </head>
 
 <body>
-
     <div style="display:none; overflow:hidden; max-height:0; font-size:1px; color:#fff; ">
         Confirm your Swifly account
     </div>
-
     <center class="container">
 
         <table role="presentation" width="100%" cellpadding="0" cellspacing="0">
