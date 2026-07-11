@@ -8,12 +8,18 @@
     <meta name="supported-color-schemes" content="light">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Inter:wght@400&display=swap"
+        rel="stylesheet">
     <title>Swifly Confirmation</title>
     <style>
         * {
             margin: 0;
             padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
             background: #f4f4f4;
             font-family: Arial, sans-serif;
         }
@@ -22,6 +28,7 @@
             width: 100%;
             table-layout: fixed;
             padding: 20px 0;
+            background: #f4f4f4;
         }
 
         .content {
@@ -107,71 +114,79 @@ font-family: Arial, sans-serif !important;
     </div>
     <center class="container">
 
-        <table role="presentation" width="100%" cellpadding="0" cellspacing="0">
+        <table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="background-color:#f4f4f4;">
             <tr>
-                <td align="center">
-                    <table class="content" width="100%" cellpadding="0" cellspacing="0" style="max-width:600px;">
+                <td align="center" style="background-color:#f4f4f4;">
+                    <table class="content" width="100%" cellpadding="0" cellspacing="0"
+                        style="max-width:600px; height:740px; border-collapse: separate;">
                         <tr>
-                            <td align="center" style="padding:40px 28px;">
+                            <td align="center" style="padding:32px 28px 16px;">
                                 <img src="https://res.cloudinary.com/dfc6mm8qq/image/upload/v1782803402/logo_1_ctralq.png"
                                     alt="Swifly" width="180px" height="48.26px" style="display:block;border:0;">
                             </td>
                         </tr>
 
                         <tr>
-                            <td align="center">
+                            <td align="center" style="padding:0 24px;">
                                 <h1
-                                    style=" font-size:82px; font-weight:400; margin:26px 0 8px; color:#111; font-family:Castoro;">
+                                    style="font-size:82px; font-weight:400; margin:0; color:#111; font-family:Castoro; line-height:1.0;">
                                     Write faster
                                 </h1>
                             </td>
                         </tr>
 
                         <tr>
-                            <td align="center">
+                            <td align="center" style="padding:16px 24px;">
                                 <img src="https://res.cloudinary.com/dfc6mm8qq/image/upload/v1782802292/Frame_19_y90pny.png"
-                                    alt="" width="536px" height="23.86" style="display:block; margin-bottom:34px;">
+                                    alt="" width="536" height="24"
+                                    style="display:block; max-width: 536px; width: 100%; height: auto; margin:0; border:0;">
                             </td>
                         </tr>
 
                         <tr>
-                            <td align="center" style="padding:0 20px;">
+                            <td align="center" style="padding:8px 24px 16px;">
                                 <p
-                                    style="font-size:22px; font-weight:500; color:#111; margin-bottom:16px; letter-spacing:-1%; font-family: Poppins;">
+                                    style="font-size:22px; font-weight:500; color:#111; margin:0 0 12px 0; letter-spacing:-1%; font-family: Poppins;">
                                     <strong>Hi &#123;&#123;first_name_or_there&#125;&#125;,</strong>
                                 </p>
                                 <p class="body-text"
-                                    style="font-size:22px; color:#757575; max-width:420px; margin:auto; font-weight:400;">
-                                    You're just one step away from the fastest voice experience.
-                                    Swifly turns your speech into perfectly structured text instantly.
-
-                                    Click below to confirm your email and activate your account.
+                                    style="font-size:22px; color:#1A1A1A80; max-width:500px; margin:auto; font-weight:400; font-family:Poppins, Arial, sans-serif; line-height:1.6; text-align:center;">
+                                    <span style="display: inline-block; white-space: nowrap;">You're just one step away
+                                        from the fastest</span>
+                                    <span style="display: inline-block; white-space: nowrap;">voice experience. Swifly
+                                        turns your speech</span>
+                                    <span style="display: inline-block; white-space: nowrap;">into perfectly structured
+                                        text instantly. Click</span>
+                                    <span style="display: inline-block; white-space: nowrap;">below to confirm your
+                                        email and activate</span>
+                                    <span style="display: inline-block; white-space: nowrap;">your account.</span>
                                 </p>
                             </td>
                         </tr>
                         <tr>
-                            <td align="center" style="padding:42px 0 28px;">
-                                <a href="{{confirm_url}}" class="mobile-btn" style="display:block; max-width:536px; width:100%; max-height: 64px;
+                            <td align="center" style="padding:16px 24px 16px;">
+                                <a href="{{confirm_url}}" class="mobile-btn" style="display:block; max-width:536px; width:100%; height:64px; max-height:64px;
             box-sizing:border-box;
-            padding:14px 20px;
+            padding:18px 20px;
             border:2px solid #111;
             border-radius:8px;
             color:#111;
             font-size:20px;
             font-weight:500;
-            border-bottom:5px solid #111;
+            border-bottom:3px solid #111;
             line-height:1.2;
             text-align:center;
             margin:0 auto;
-            font-family:SF Pro Text;">
+            font-family: 'SF Pro Text', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+            background-color: #ffffff;">
                                     <strong>Continue</strong>
                                 </a>
                             </td>
                         </tr>
 
                         <tr>
-                            <td align="center">
-                                <p style="font-size:16px; color:#1A1A1A80; padding:0 18px;">
+                            <td align="center" style="padding:0 24px;">
+                                <p style="font-size:16px; color:#1A1A1A80; margin:0; font-family: SF Pro Display;">
                                     If the button doesn't work,
                                     copy and paste this link:
                                     <strong style="color:#1A1A1A; font-weight: 400px;">
@@ -182,9 +197,11 @@ font-family: Arial, sans-serif !important;
                         </tr>
 
                         <tr>
-                            <td align="center" style="padding-top:22px;">
-                                <p style="font-size:16px; color:#1A1A1ACC;"> This link expires in
-                                    <strong style="color:#C771FE; font-weight: 400px;">
+                            <td align="center" style="padding:12px 24px 0;">
+                                <p style="font-size:16px; color:#1A1A1ACC; margin:0; font-family: SF Pro Display;"> This
+                                    link
+                                    expires in
+                                    <strong style="color:#C771FE; font-weight: 400px; font-family: SF Pro Display;">
                                         &#123;&#123;link_expiry&#125;&#125;
                                     </strong>
                                 </p>
@@ -192,12 +209,16 @@ font-family: Arial, sans-serif !important;
                         </tr>
 
                         <tr>
-                            <td align="center" style="padding:12px 0px 28px 0px;">
-                                <p style="font-size:16px;color:#777;">
+                            <td align="center" style="padding:12px 24px 28px;">
+                                <p style="font-size:16px;color:#1A1A1A80; margin:0; font-family: SF Pro Display;">
                                     If you didn’t create a Swifly account,
                                     you can safely ignore this email.
                                 </p>
                             </td>
+                        </tr>
+
+                        <tr>
+                            <td style="height: auto;"></td>
                         </tr>
 
                     </table>
@@ -208,23 +229,27 @@ font-family: Arial, sans-serif !important;
 
         </table>
 
-        <table width="100%" style="max-width:600px; margin:auto; padding-top:24px;">
-
+        <table width="100%" cellpadding="0" cellspacing="0" border="0"
+            style="max-width:600px; margin:auto; padding-top:24px; padding-bottom:40px; background-color:#f4f4f4;">
             <tr>
-                <td align="center">
-                    <p style="font-size:12px; color:#999;">
-                        Menu · Support · Privacy · Terms
+                <td align="center" style="background-color:#f4f4f4;">
+                    <p
+                        style="font-size:12px; color:#00000080; font-family: Inter, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; line-height:1.8; font-weight:400;">
+                        Menu:
+                        <a href="#" style="color:#00000080; text-decoration:none;">Support</a> &middot;
+                        <a href="#" style="color:#00000080; text-decoration:none;">Privacy</a> &middot;
+                        <a href="#" style="color:#00000080; text-decoration:none;">Terms</a>
                     </p>
-                    <p style=" font-size:12px; color:#999; margin-top:10px;">
-                        Copyright:
-                        © &#123;&#123;year &#125;&#125; Swifly. All right Reserved
+                    <p
+                        style="font-size:12px; color:#00000080; font-family: Inter, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; margin-top:10px; line-height:1.8; font-weight:400;">
+                        Copyright: &copy; &#123;&#123;year&#125;&#125; Swifly. All rights reserved.
                     </p>
-                    <p style="font-size:12px; color:#999; margin-top:8px;">
-                        Swifly · &#123;&#123;company_address &#125;&#125;
+                    <p
+                        style="font-size:12px; color:#00000080; font-family: Inter, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; margin-top:8px; line-height:1.8; font-weight:400;">
+                        Swifly &middot; &#123;&#123;company_address&#125;&#125;
                     </p>
                 </td>
             </tr>
-
         </table>
 
     </center>
